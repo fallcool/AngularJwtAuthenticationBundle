@@ -243,20 +243,19 @@ or as a query parameter.
 
 By default only the authorization header mode is enabled : `Authorization: Bearer {token}`
 
-See [configuration reference](1-configuration-reference.md) document to enable query string parameter mode or change the header value prefix.
-
 #### Examples
 
 For lexik bundle :
+
     * See [Functionally testing a JWT protected api](3-functional-testing.md) document
     * or the [sandbox application](https://github.com/slashfan/LexikJWTAuthenticationBundleSandbox) for a fully working example.
 
 ##### With Curl
+
 ###### Get the token
 
     $ curl -X POST -d '{"username": "user", "password": "user"}' -H "Content-Type:application/json" http://localhost/app_dev.php/api/login_check
 
-returns : 
 Returns : 
 
 ```json
@@ -271,15 +270,15 @@ Returns :
 }
 ```
 ###### Keep token safe
-
-  $ curl -X POST -d '{"username": "admin", "password": "admin"}' -H "Content-Type:application/json" http://localhost/app_dev.php/api/login_check | cut -c 11-827 > token.txt
+	
+    $ curl -X POST -d '{"username": "admin", "password": "admin"}' -H "Content-Type:application/json" http://localhost/app_dev.php/api/login_check | cut -c 11-827 > token.txt
 
 ###### Get a resource
 
-  $ curl -Lv -X GET -H "Accept:application/json" -H "Authorization: Bearer $(cat token.txt)" 'my resource URI'
+    $ curl -Lv -X GET -H "Accept:application/json" -H "Authorization: Bearer $(cat token.txt)" 'my resource URI'
 
-Notes
------
+Notes from lexik bundle
+-----------------------
 
 #### About token expiration
 
