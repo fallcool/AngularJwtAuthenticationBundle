@@ -1,0 +1,32 @@
+{
+  "name": "Auth/AngularJwtBundle",
+  "version": "0.0.0",
+  "authors": [
+    "Meunier Maxime",
+    "Corentin Cocoual",
+    "Stéphane Mangin",
+    "François Esnault"
+  ],
+  "description": "Angular/Symfony Authentication Bundle",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.2",
+    "angular": "~1.3.*",
+    "angular-route": "~1.3.*",
+    "angular-resource": "~1.3.*",
+    "angular-bootstrap": "~0.12.1",
+    "angular-local-storage": "~0.1.5",
+    "angular-jwt": "~0.0.6",
+    "angular-http-auth": "latest"
+  },
+  "resolutions": {
+    "angular": "1.3.15"
+  }
+}

@@ -1,0 +1,19 @@
+parameters:
+
+    angularjwt.event.jwt_response_listener.class: Plugins\AngularJwtBundle\EventListener\JWTResponseListener
+    angularjwt.event.jwt_created_listener.class: Plugins\AngularJwtBundle\EventListener\JWTCreatedListener
+    angularjwt.event.jwt_decoded_listener.class: Plugins\AngularJwtBundle\EventListener\JWTDecodedListener
+
+services:
+    angularjwt.event.jwt_response_listener:
+        class: %angularjwt.event.jwt_response_listener.class%
+        tags:
+            - { name: kernel.event_listener, event: lexik_jwt_authentication.on_authentication_success, method: onAuthenticationSuccessResponse }
+    angularjwt.event.jwt_created_listener:
+        class: %angularjwt.event.jwt_created_listener.class%
+        tags:
+            - { name: kernel.event_listener, event: lexik_jwt_authentication.on_jwt_created, method: onJWTCreated }
+    angularjwt.event.jwt_decoded_listener:
+        class: %angularjwt.event.jwt_decoded_listener.class%
+        tags:
+            - { name: kernel.event_listener, event: lexik_jwt_authentication.on_jwt_decoded, method: onJWTDecoded }

@@ -1,0 +1,6 @@
+imports:
+    - { resource: services.yml }
+
+# Assetic Configuration
+assetic:
+    bundles:        [ PluginsAngularJwtBundle ]
