@@ -1,8 +1,8 @@
 parameters:
 
-    angularjwt.event.jwt_response_listener.class: Plugins\AngularJwtBundle\EventListener\JWTResponseListener
-    angularjwt.event.jwt_created_listener.class: Plugins\AngularJwtBundle\EventListener\JWTCreatedListener
-    angularjwt.event.jwt_decoded_listener.class: Plugins\AngularJwtBundle\EventListener\JWTDecodedListener
+    angularjwt.event.jwt_response_listener.class: StephaneMangin\Bundle\AngularJwtAuthentication\EventListener\JWTResponseListener
+    angularjwt.event.jwt_created_listener.class: StephaneMangin\Bundle\AngularJwtAuthentication\EventListener\JWTCreatedListener
+    angularjwt.event.jwt_decoded_listener.class: StephaneMangin\Bundle\AngularJwtAuthentication\EventListener\JWTDecodedListener
 
 services:
     angularjwt.event.jwt_response_listener:

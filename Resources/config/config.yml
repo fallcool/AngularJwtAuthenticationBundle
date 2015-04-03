@@ -3,4 +3,4 @@ imports:
 
 # Assetic Configuration
 assetic:
-    bundles:        [ PluginsAngularJwtBundle ]
+    bundles:        [ StephaneManginBundleAngularJwtAuthentication ]

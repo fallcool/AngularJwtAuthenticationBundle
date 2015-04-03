@@ -1,6 +1,6 @@
 <?php
 
-namespace Plugins\AngularJwtBundle\DependencyInjection;
+namespace StephaneMangin\Bundle\AngularJwtAuthentication\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;

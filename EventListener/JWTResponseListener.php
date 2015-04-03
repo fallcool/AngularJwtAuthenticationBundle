@@ -1,6 +1,6 @@
 <?php
 
-namespace Plugins\AngularJwtBundle\EventListener;
+namespace StephaneMangin\Bundle\AngularJwtAuthentication\EventListener;
 
 use Lexik\Bundle\JWTAuthenticationBundle\Event\AuthenticationSuccessEvent;
 use Symfony\Component\Security\Core\User\UserInterface;
