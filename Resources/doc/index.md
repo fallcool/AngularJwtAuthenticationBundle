@@ -202,9 +202,6 @@ generate the token and send it as part of a json response body.
 
 Store it (client side), the JWT is reusable until its ttl has expired (86400 seconds by default).
 
-#### For test purpose
-
-
 ### 2. Use the token
 
 Simply pass the JWT on each request to the protected firewall, either as an authorization header
@@ -216,8 +213,36 @@ See [configuration reference](1-configuration-reference.md) document to enable q
 
 #### Examples
 
-See [Functionally testing a JWT protected api](3-functional-testing.md) document
-or the [sandbox application](https://github.com/slashfan/LexikJWTAuthenticationBundleSandbox) for a fully working example.
+For lexik bundle :
+    * See [Functionally testing a JWT protected api](3-functional-testing.md) document
+    * or the [sandbox application](https://github.com/slashfan/LexikJWTAuthenticationBundleSandbox) for a fully working example.
+
+##### With Curl
+###### Get the token
+
+    $ curl -X POST -d '{"username": "user", "password": "user"}' -H "Content-Type:application/json" http://localhost/app_dev.php/api/login_check
+
+returns : 
+Returns : 
+
+```json
+{
+  "token":"eyJhbGciOiJS(...)TYr9RpH0",
+  "data":{
+    "username":"user",
+    "roles":[
+      "ROLE_USER"
+    ]
+  }
+}
+```
+###### Keep token safe
+
+  $ curl -X POST -d '{"username": "admin", "password": "admin"}' -H "Content-Type:application/json" http://localhost/app_dev.php/api/login_check | cut -c 11-827 > token.txt
+
+###### Get a resource
+
+  $ curl -Lv -X GET -H "Accept:application/json" -H "Authorization: Bearer $(cat token.txt)" 'my resource URI'
 
 Notes
 -----
@@ -241,7 +266,7 @@ This may not be a problem depending on the system that makes calls to your API (
 Further documentation
 ---------------------
 
-The following documents are available:
+The following documents are available for lexik bundle:
 
 - [Configuration reference](1-configuration-reference.md)
 - [Data customization and validation](2-data-customization.md)
