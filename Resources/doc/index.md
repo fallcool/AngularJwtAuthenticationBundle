@@ -4,7 +4,8 @@ Getting started
 Prerequisites
 -------------
 
-This bundle requires LexikAuthenticationBundle (and the OpenSSL library if you intend to use the default provided encoder).
+This bundle requires [LexikAuthenticationBundle](http://github.com/lexik/LexikJWTAuthenticationBundle/) (and the OpenSSL library if you intend to use the default provided encoder), [FOSUserBundle](http://github.com/FriendsOfSymfony/FOSUserBundle/) and the [FR3DLdapBundle
+](http://github.com/Maks3w/FR3DLdapBundle) for LDAP support
 
 **Protip:** Though the bundle doesn't enforce you to do so, it is highly recommended to use HTTPS. 
 
@@ -301,8 +302,8 @@ Further documentation
 
 The following documents are available for lexik bundle:
 
-- [Configuration reference](1-configuration-reference.md)
-- [Data customization and validation](2-data-customization.md)
-- [Functionally testing a JWT protected api](3-functional-testing.md)
-- [Working with CORS requests](4-cors-requests.md)
-- [JWT encoder service customization](5-encoder-service.md)
+- [Configuration reference](https://github.com/lexik/LexikJWTAuthenticationBundle/blob/master/Resources/doc/1-configuration-reference.md)
+- [Data customization and validation](https://github.com/lexik/LexikJWTAuthenticationBundle/blob/master/Resources/doc/2-data-customization.md)
+- [Functionally testing a JWT protected api](https://github.com/lexik/LexikJWTAuthenticationBundle/blob/master/Resources/doc/3-functional-testing.md)
+- [Working with CORS requests](https://github.com/lexik/LexikJWTAuthenticationBundle/blob/master/Resources/doc/4-cors-requests.md)
+- [JWT encoder service customization](https://github.com/lexik/LexikJWTAuthenticationBundle/blob/master/Resources/doc/5-encoder-service.md)
