@@ -22,8 +22,8 @@
         "psr-0": {
             "AngularJwtAuthenticationBundle": "src"
         }
-    }
-    "target-dir": "StephaneMangin/Bundle/AngularJwtAuthenticationBundle",
+    },
+    "target-dir": "StephaneMangin/Bundle/AngularJwtAuthentication",
     "extra": {
         "branch-alias": {
             "dev-master": "1.0-dev"
