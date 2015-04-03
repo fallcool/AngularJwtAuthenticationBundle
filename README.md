@@ -1,6 +1,6 @@
 # AngularJwtAuthenticationBundle
 
-Symfony bundle integrating AngularJS and Symfony login functionnality (ldap included)
+This bundle provides JWT authentication for your Symfony2 REST API through AngularJS.
 
 ## Dependencies
 
@@ -8,3 +8,7 @@ Symfony bundle integrating AngularJS and Symfony login functionnality (ldap incl
   * lexik/LexikJWTAuthenticationBundle
   * Maks3w/FR3DLdapBundle
 
+## Functionnalities
+
+ * FOSUser authentification
+ * Ldap authentification
