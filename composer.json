@@ -1,5 +1,5 @@
 {
-    "name": "stephanemangin/angular-jwt-authentication-bundle",
+    "name": "StephaneMangin/AngularJwtAuthenticationBundle",
     "type": "symfony-bundle",
     "description": "This bundle provides JWT authentication for your Symfony2 REST API through AngularJS",
     "keywords": ["Symfony2", "bundle", "jwt", "jws", "authentication", "api", "rest", "angular"],
@@ -19,8 +19,10 @@
         "fr3d/ldap-bundle": "2.0.*@dev"
     },
     "autoload": {
-        "psr-0": { "StephaneMangin\\Bundle\\AngularJwtBundle": "" }
-    },
+        "psr-0": {
+            "AngularJwtAuthenticationBundle": "src",
+        }
+    }
     "target-dir": "StephaneMangin/Bundle/AngularJwtBundle",
     "extra": {
         "branch-alias": {
