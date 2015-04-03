@@ -1,5 +1,5 @@
 {
-    "name": "StephaneMangin/AngularJwtAuthenticationBundle",
+    "name": "stephane-mangin/angular-jwt-authentication-bundle",
     "type": "symfony-bundle",
     "description": "This bundle provides JWT authentication for your Symfony2 REST API through AngularJS",
     "keywords": ["Symfony2", "bundle", "jwt", "jws", "authentication", "api", "rest", "angular", "ldap", "Active Directory"],
