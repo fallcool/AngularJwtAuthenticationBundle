@@ -20,7 +20,7 @@
     },
     "autoload": {
         "psr-0": {
-            "AngularJwtAuthenticationBundle": "src",
+            "AngularJwtAuthenticationBundle": "src"
         }
     }
     "target-dir": "StephaneMangin/Bundle/AngularJwtAuthenticationBundle",
