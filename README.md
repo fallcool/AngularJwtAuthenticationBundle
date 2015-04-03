@@ -1,14 +1,30 @@
-# AngularJwtAuthenticationBundle
+AngularJwtAuthenticationBundle
+==============================
 
 This bundle provides JWT authentication for your Symfony2 REST API through AngularJS.
 
-## Dependencies
+Documentation
+-------------
 
-  * FriendsOfSymfony/FOSUserBundle
-  * lexik/LexikJWTAuthenticationBundle
-  * Maks3w/FR3DLdapBundle
+The bulk of the documentation is stored in the `Resources/doc/index.md` file in this bundle:
 
-## Functionnalities
+[Read the documentation](Resources/doc/index.md)
 
- * FOSUser authentification
- * Ldap authentification
+Contributing
+------------
+
+See [CONTRIBUTING](CONTRIBUTING.md) file.
+
+
+Credits
+-------
+
+* Stéphane Mangin <stephane.mangin@freesbee.fr>
+* [All contributors](https://github.com/stephanemangin/AngularJwtAuthenticationBundle/graphs/contributors)
+
+License
+-------
+
+This bundle is under the MIT license. See the complete license in the bundle:
+
+    Resources/meta/LICENSE
