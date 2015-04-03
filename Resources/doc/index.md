@@ -164,6 +164,40 @@ fos_user_change_password:
     prefix: /profile
 ```
 
+Add the dependencies to your `index.twig.html` :
+
+```html
+    <!-...->
+	<body ng-controller="AuthCtrl as auth">
+    <!-...->
+    
+	<!-- Auth module -->
+	<script type="text/javascript"
+			src="{{asset('/bundles/pluginsangularjwt/js/app.js')}}"></script>
+	<script type="text/javascript"
+			src="{{asset('/bundles/pluginsangularjwt/js/controllers/authCtrl.js')}}"></script>
+	<script type="text/javascript"
+			src="{{asset('/bundles/pluginsangularjwt/js/controllers/loginModalCtrl.js')}}"></script>
+	<script type="text/javascript"
+			src="{{asset('/bundles/pluginsangularjwt/js/factory/auth-interceptor.js')}}"></script>
+	<script type="text/javascript"
+			src="{{asset('/bundles/pluginsangularjwt/bower_components/angular-local-storage/dist/angular-local-storage.js')}}"></script>
+	<script type="text/javascript"
+			src="{{asset('/bundles/pluginsangularjwt/bower_components/angular-http-auth/src/http-auth-interceptor.js')}}"></script>
+	<script type="text/javascript"
+			src="{{asset('/bundles/pluginsangularjwt/bower_components/angular-bootstrap/ui-bootstrap-tpls.js')}}"></script>
+    <!-...->
+```
+
+And dependencies to your main AngularJS module:
+
+```javascript
+	var my_app = angular
+		.module('my app', [ 
+			'authJwt'
+		])
+```
+
 #### Important note for Apache users
 
 As stated in [this link](http://stackoverflow.com/questions/11990388/request-headers-bag-is-missing-authorization-header-in-symfony-2) and [this one](http://stackoverflow.com/questions/19443718/symfony-2-3-getrequest-headers-not-showing-authorization-bearer-token/19445020), Apache server will strip any `Authorization header` not in a valid HTTP BASIC AUTH format. 
