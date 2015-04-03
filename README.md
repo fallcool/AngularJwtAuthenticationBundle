@@ -1,4 +1,4 @@
-# AngularJwt
+# AngularJwtAuthenticationBundle
 
 Symfony bundle integrating AngularJS and Symfony login functionnality (ldap included)
 
