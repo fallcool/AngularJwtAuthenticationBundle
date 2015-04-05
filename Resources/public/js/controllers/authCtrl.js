@@ -20,7 +20,7 @@
             $scope.$on('event:auth-loginRequired', function () {
             	if(!localStorageService.get('token')) {
             		$modal.open({
-	                    templateUrl: '/bundles/pluginsangularjwt/templates/login.html',
+	                    templateUrl: '/bundles/stephanemanginangularjwtahentication/templates/login.html',
 	                    controller:  'LoginModalCtrl',
 	                    backdrop:    'static'
 	                });
