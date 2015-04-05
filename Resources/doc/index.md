@@ -22,7 +22,7 @@ public function registerBundles()
         new Lexik\Bundle\JWTAuthenticationBundle\LexikJWTAuthenticationBundle(),
         new FOS\UserBundle\FOSUserBundle(),
         new FR3D\LdapBundle\FR3DLdapBundle(),
-        new StephaneMangin\Bundle\AngularJwtAuthentication\AngularJwtAuthenticationBundle(),
+        new StephaneMangin\Bundle\AngularJwtAuthentication\StephaneManginAngularJwtAuthenticationBundle(),
         // ...
     );
 }
