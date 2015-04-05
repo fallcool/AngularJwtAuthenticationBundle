@@ -23,7 +23,7 @@
     "target-dir": "StephaneMangin/Bundle/AngularJwtAuthentication",
     "extra": {
         "branch-alias": {
-            "dev-master": "0.11-dev"
+            "dev-master": "0.1.1-dev"
         }
     }
 }
