@@ -165,7 +165,7 @@ fos_user_change_password:
     prefix: /profile
 ```
 
-Add the dependencies to your `index.twig.html` :
+Add the dependencies to your `index.twig.html`. Assume that you have already imported angularJs, angularResource, AngularRoute and jQuery :
 
 ```html
     <!-...->
@@ -182,11 +182,11 @@ Add the dependencies to your `index.twig.html` :
 	<script type="text/javascript"
 			src="{{asset('/bundles/pluginsangularjwt/js/factory/auth-interceptor.js')}}"></script>
 	<script type="text/javascript"
-			src="{{asset('/bundles/pluginsangularjwt/bower_components/angular-local-storage/dist/angular-local-storage.js')}}"></script>
+			src="{{asset('/bundles/pluginsangularjwt/thirdparty/angular-local-storage/dist/angular-local-storage.js')}}"></script>
 	<script type="text/javascript"
-			src="{{asset('/bundles/pluginsangularjwt/bower_components/angular-http-auth/src/http-auth-interceptor.js')}}"></script>
+			src="{{asset('/bundles/pluginsangularjwt/thirdparty/angular-http-auth/src/http-auth-interceptor.js')}}"></script>
 	<script type="text/javascript"
-			src="{{asset('/bundles/pluginsangularjwt/bower_components/angular-bootstrap/ui-bootstrap-tpls.js')}}"></script>
+			src="{{asset('/bundles/pluginsangularjwt/thirdparty/angular-bootstrap/ui-bootstrap-tpls.js')}}"></script>
     <!-...->
 ```
 
