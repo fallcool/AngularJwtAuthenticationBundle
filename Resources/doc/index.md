@@ -250,8 +250,8 @@ By default only the authorization header mode is enabled : `Authorization: Beare
 
 For lexik bundle :
 
-    * See [Functionally testing a JWT protected api](3-functional-testing.md) document
-    * or the [sandbox application](https://github.com/slashfan/LexikJWTAuthenticationBundleSandbox) for a fully working example.
+See [Functionally testing a JWT protected api](3-functional-testing.md) document
+or the [sandbox application](https://github.com/slashfan/LexikJWTAuthenticationBundleSandbox) for a fully working example.
 
 ##### With Curl
 
