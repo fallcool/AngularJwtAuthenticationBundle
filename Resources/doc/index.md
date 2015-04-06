@@ -174,19 +174,19 @@ Add the dependencies to your `index.twig.html`. Assume that you have already imp
     
 	<!-- Auth module -->
 	<script type="text/javascript"
-		src="{{asset('/bundles/pluginsangularjwt/js/app.js')}}"></script>
+		src="{{asset('/bundles/stephanemanginangularjwtauthentication/js/app.js')}}"></script>
 	<script type="text/javascript"
-		src="{{asset('/bundles/pluginsangularjwt/js/controllers/authCtrl.js')}}"></script>
+		src="{{asset('/bundles/stephanemanginangularjwtauthentication/js/controllers/authCtrl.js')}}"></script>
 	<script type="text/javascript"
-		src="{{asset('/bundles/pluginsangularjwt/js/controllers/loginModalCtrl.js')}}"></script>
+		src="{{asset('/bundles/stephanemanginangularjwtauthentication/js/controllers/loginModalCtrl.js')}}"></script>
 	<script type="text/javascript"
-		src="{{asset('/bundles/pluginsangularjwt/js/factory/auth-interceptor.js')}}"></script>
+		src="{{asset('/bundles/stephanemanginangularjwtauthentication/js/factory/auth-interceptor.js')}}"></script>
 	<script type="text/javascript"
-		src="{{asset('/bundles/pluginsangularjwt/thirdparty/angular-local-storage/dist/angular-local-storage.js')}}"></script>
+		src="{{asset('/bundles/stephanemanginangularjwtauthentication/thirdparty/angular-local-storage/dist/angular-local-storage.js')}}"></script>
 	<script type="text/javascript"
-		src="{{asset('/bundles/pluginsangularjwt/thirdparty/angular-http-auth/src/http-auth-interceptor.js')}}"></script>
+		src="{{asset('/bundles/stephanemanginangularjwtauthentication/thirdparty/angular-http-auth/src/http-auth-interceptor.js')}}"></script>
 	<script type="text/javascript"
-		src="{{asset('/bundles/pluginsangularjwt/thirdparty/angular-bootstrap/ui-bootstrap-tpls.js')}}"></script>
+		src="{{asset('/bundles/stephanemanginangularjwtauthentication/thirdparty/angular-bootstrap/ui-bootstrap-tpls.js')}}"></script>
 	<script type="text/javascript"
 		src="{{asset('/bundles/stephanemanginangularjwtauthentication/thirdparty/angular-jwt/dist/angular-jwt.js')}}"></script>
     <!-...->
