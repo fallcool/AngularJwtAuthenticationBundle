@@ -24,7 +24,6 @@
                 },
                 logout: function () {
                     delete $http.defaults.headers.common.Authorization;
-                    console.log('delete');
                     localStorageService.clearAll();
                     $rootScope.$broadcast('event:auth-logout-complete');
                 }
