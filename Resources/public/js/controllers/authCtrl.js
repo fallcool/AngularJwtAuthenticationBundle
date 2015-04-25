@@ -28,6 +28,7 @@
 			}
 			$scope.logout = function() {
 				AuthenticationService.logout();
+				localStorageService.remove('token');
 				$scope.connected = false;
 				$location.path('/');
 				$route.reload();
